@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage"
+             BackgroundColor="White">
+
+    <Grid RowDefinitions="50,100,50,*" ColumnDefinitions="*" Margin="5">
+        <Label Text="CALCULADORA" HorizontalOptions="Center" TextColor="Black" FontSize="40"/>
+        <Label FontSize="30" Grid.Row="1" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,25,5" TextColor="Black" x:Name="lblOperacion"/>
+        <Label Text="Resultado" Grid.Row="2" FontSize="25" TextColor="Black" HorizontalOptions="End" Margin="0,0,25,0" x:Name="lblResultado"/>
+        <Grid RowDefinitions="80,80,80,80,80" ColumnDefinitions="80,80,80,80" Grid.Row="3" Margin="10">
+            <Button Text="C" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="0" Grid.Row="0" Clicked="Button_Clicked" Margin="5" />
+            <Button Text="/" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="1" Grid.Row="0" Clicked="Button_Clicked" Margin="5"/>
+            <Button Text="X" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="2" Grid.Row="0" Clicked="Button_Clicked" Margin="5"/>
+            <Button Text="CE" FontSize="25" BackgroundColor="#F3885D" TextColor="Black" Grid.Column="3" Grid.Row="0" Clicked="Button_Clicked" Margin="5"/>
+
+            <Button Text="7" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="0" Grid.Row="1" Clicked="Button_Clicked" Margin="5" />
+            <Button Text="8" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="1" Grid.Row="1" Clicked="Button_Clicked" Margin="5"/>
+            <Button Text="9" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="2" Grid.Row="1" Clicked="Button_Clicked" Margin="5"/>
+            <Button Text="+" FontSize="25" BackgroundColor="#F3885D" TextColor="Black" Grid.Column="3" Grid.Row="1" Clicked="Button_Clicked" Margin="5"/>
+
+            <Button Text="4" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="0" Grid.Row="2" Clicked="Button_Clicked" Margin="5" />
+            <Button Text="5" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="1" Grid.Row="2" Clicked="Button_Clicked" Margin="5"/>
+            <Button Text="6" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="2" Grid.Row="2" Clicked="Button_Clicked" Margin="5"/>
+            <Button Text="-" FontSize="30" BackgroundColor="#F3885D" TextColor="Black" Grid.Column="3" Grid.Row="2" Clicked="Button_Clicked" Margin="5"/>
+
+            <Button Text="1" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="0" Grid.Row="3" Clicked="Button_Clicked" Margin="5" />
+            <Button Text="2" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="1" Grid.Row="3" Clicked="Button_Clicked" Margin="5"/>
+            <Button Text="3" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="2" Grid.Row="3" Clicked="Button_Clicked" Margin="5"/>
+            <Button Text="=" FontSize="30" BackgroundColor="#F3885D" TextColor="Black" Grid.Column="3" Grid.Row="3" Clicked="Button_Clicked" Margin="5" Grid.RowSpan="2"/>
+
+            <Button Text="0" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="0" Grid.Row="4" Clicked="Button_Clicked" Margin="5" Grid.ColumnSpan="2"/>
+            <Button Text="." FontSize="30" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="2" Grid.Row="4" Clicked="Button_Clicked" Margin="5" Grid.RowSpan="2"/>
+        </Grid>
+    </Grid>
+</ContentPage>
