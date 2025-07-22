@@ -24,16 +24,16 @@ namespace Calculadora
                 }
                 else
                 {
-                    if (boton.Text =="X")
+                    if (boton.Text == "X")
                     {
                         lblOperacion.Text += "*";
                     }
                     else
                     {
-                        lblOperacion.Text += boton.Text;    
+                        lblOperacion.Text += boton.Text;
                     }
                     return;
-                    
+
                 }
             }
             int numero = 0;
@@ -47,11 +47,23 @@ namespace Calculadora
             {
                 lblOperacion.Text = lblResultado.Text = string.Empty;
                 return;
-            }else if (boton.Text == "=" && !string.IsNullOrEmpty(lblOperacion.Text))
+            }
+            else if (boton.Text == "=" && !string.IsNullOrEmpty(lblOperacion.Text))
             {
                 string operacion = lblOperacion.Text;
                 var exp = new Expression(operacion);
                 lblResultado.Text = exp.Evaluate().ToString();
+            }
+            else if (boton.Text == "CE")
+            {
+                if (lblOperacion.Text.Length > 0)
+                {
+                    lblOperacion.Text = lblOperacion.Text.Substring(0, lblOperacion.Text.Length - 1);
+                }
+                if (lblOperacion.Text.Length == 0)
+                {
+                    lblResultado.Text = string.Empty;
+                }
             }
         }
     }

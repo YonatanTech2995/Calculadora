@@ -12,7 +12,7 @@
             <Button Text="C" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="0" Grid.Row="0" Clicked="Button_Clicked" Margin="5" />
             <Button Text="/" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="1" Grid.Row="0" Clicked="Button_Clicked" Margin="5"/>
             <Button Text="X" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="2" Grid.Row="0" Clicked="Button_Clicked" Margin="5"/>
-            <Button Text="" FontSize="25" BackgroundColor="#F3885D" TextColor="Black" Grid.Column="3" Grid.Row="0" Clicked="Button_Clicked" Margin="5"/>
+            <Button Text="CE" FontSize="25" BackgroundColor="#F3885D" TextColor="Black" Grid.Column="3" Grid.Row="0" Clicked="Button_Clicked" Margin="5"/>
 
             <Button Text="7" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="0" Grid.Row="1" Clicked="Button_Clicked" Margin="5" />
             <Button Text="8" FontSize="25" BackgroundColor="#EDE8E2" TextColor="Black" Grid.Column="1" Grid.Row="1" Clicked="Button_Clicked" Margin="5"/>
